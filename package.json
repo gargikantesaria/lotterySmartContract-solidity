@@ -1,5 +1,5 @@
 {
-  "name": "helloworldcontract",
+  "name": "lotteryContract",
   "version": "1.0.0",
   "description": "First solidity contract",
   "main": "index.js",

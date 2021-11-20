@@ -2,8 +2,8 @@ const path = require('path');
 const fs = require('fs');
 const solc =  require('solc');
 
-const helloWorldPath = path.resolve(__dirname, 'contracts', 'helloWorld.sol');
-const source = fs.readFileSync( helloWorldPath, 'utf-8');
+const contractPath = path.resolve(__dirname, 'contracts', 'lotteryContract.sol');
+const source = fs.readFileSync( contractPath, 'utf-8');
 
-module.exports = solc.compile(source, 1).contracts[':helloWorld'];
+module.exports = solc.compile(source, 1).contracts[':lotteryContract'];
 

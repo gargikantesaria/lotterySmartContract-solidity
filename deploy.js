@@ -3,8 +3,8 @@ const Web3 = require('web3');
 const { interface, bytecode } = require('./compile');
 
 const provider = new HDWalletProvider(
-    'replace_your_pneumonic_code', //pneumonic from meta mask
-    'replace_your_rinkeBy_network_API_from_Infura' // rinkeby network API from infura
+    'battle route nice ripple yard general brass such carbon pulse abandon behave', //pneumonic from meta mask
+    'https://rinkeby.infura.io/v3/81128292973a46fdb1fc79f94f717a72' // rinkeby network API from infura
 )
 
 const web3 = new Web3(provider);
@@ -15,7 +15,7 @@ const deploy =  async() => {
     console.log("from deployment account", accounts[0]);
 
     const result = await new web3.eth.Contract(JSON.parse(interface))
-    .deploy({data: bytecode, arguments: ['Hi there! This is my first contract']})
+    .deploy({data: bytecode})
     .send({ gas: '400000', from: accounts[0] });
 
     console.log('Deploy contract to', result.options.address);
