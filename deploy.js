@@ -3,8 +3,9 @@ const Web3 = require('web3');
 const { interface, bytecode } = require('./compile');
 
 const provider = new HDWalletProvider(
-    'battle route nice ripple yard general brass such carbon pulse abandon behave', //pneumonic from meta mask
-    'https://rinkeby.infura.io/v3/81128292973a46fdb1fc79f94f717a72' // rinkeby network API from infura
+    'replace_your_pneumonic_code', //pneumonic from meta mask
+    'replace_your_rinkeBy_network_API_from_Infura' // rinkeby network API from infura
+
 )
 
 const web3 = new Web3(provider);
